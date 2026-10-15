@@ -3,6 +3,7 @@ message: "If you use this software, please cite it using the metadata in this fi
 title: regulatory-multiomics-pipeline
 type: software
 version: 0.1.0
+date-released: 2026-10-15
 authors:
   - family-names: Galgale
     given-names: Sarvesh
