@@ -4,6 +4,7 @@ title: regulatory-multiomics-pipeline
 type: software
 version: 0.1.0
 date-released: 2026-10-15
+doi: 10.5281/zenodo.23397400
 authors:
   - family-names: Galgale
     given-names: Sarvesh
@@ -14,3 +15,15 @@ abstract: >-
   offline reporting, provenance, and external validation on GRCh38 with
   GENCODE release 50.
 repository-code: "https://github.com/sarvezh1/regulatory-multiomics-pipeline"
+
+keywords:
+  - bioinformatics
+  - multi-omics
+  - regulatory genomics
+  - RNA-seq
+  - ATAC-seq
+  - whole-genome bisulfite sequencing
+  - H3K27ac ChIP-seq
+  - epigenomics
+  - Nextflow
+  - reproducibility

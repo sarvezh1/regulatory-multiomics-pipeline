@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+# Changelog
+
+## [Unreleased]
+
 ## [0.1.0] - 2026-10-15
 
 Initial public release featuring:

@@ -1,9 +1,14 @@
-# regulatory-multiomics-pipeline
+# Regulatory Multi-Omics Pipeline
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23397400.svg)](https://doi.org/10.5281/zenodo.23397400)
+[![GitHub Release](https://img.shields.io/github/v/release/sarvezh1/regulatory-multiomics-pipeline?sort=semver)](https://github.com/sarvezh1/regulatory-multiomics-pipeline/releases/latest)
 [![GitHub Actions CI](https://github.com/sarvezh1/regulatory-multiomics-pipeline/actions/workflows/ci.yml/badge.svg)](https://github.com/sarvezh1/regulatory-multiomics-pipeline/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-A reproducible Nextflow DSL2 workflow that processes RNA-seq, ATAC-seq, conventional WGBS, and H3K27ac ChIP-seq and integrates their evidence around genes and promoters. It produces standardized contracts, cautious regulatory associations, and offline reports with checksummed provenance; concordance is evidence of association, not causation.
+[![Nextflow](https://img.shields.io/badge/Nextflow-26.04.6-0DC09D?logo=nextflow&logoColor=white)](https://www.nextflow.io/)
+[![Docker](https://img.shields.io/badge/Docker-Linux%2Famd64-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
+![Genome](https://img.shields.io/badge/Genome-GRCh38-6C5CE7)
+![Annotation](https://img.shields.io/badge/GENCODE-v50-7B68AE)
 
 ## What this pipeline does
 
@@ -142,6 +147,9 @@ Scientific tables and deterministic identifiers are compared by normalized conte
 
 ## Citation and license
 
-Version `0.1.0` citation metadata are provided in [CITATION.cff](CITATION.cff). A release DOI will be added after archival; none is claimed yet.
+Version `0.1.0` is archived on Zenodo with DOI
+[`10.5281/zenodo.23397400`](https://doi.org/10.5281/zenodo.23397400).
+
+Citation metadata are provided in [`CITATION.cff`](CITATION.cff). GitHub can also generate APA and BibTeX citations from this file.
 
 Project-authored code and documentation are available under the [MIT License](LICENSE). Third-party data and resources retain their original terms and are not relicensed by this project.
