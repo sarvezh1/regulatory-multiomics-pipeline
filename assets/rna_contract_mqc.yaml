@@ -1,0 +1,10 @@
+id: rna_contract
+section_name: RNA count contract
+description: Standardized RNA count-contract generation status.
+plot_type: table
+pconfig:
+  id: rna_contract_status
+  title: RNA count contract
+data:
+  Contract:
+    Status: COMPLETE

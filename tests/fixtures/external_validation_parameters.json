@@ -1,0 +1,13 @@
+{
+  "annotation_concordance": "ENCODE_K562_CCRE",
+  "cell_type": "K562",
+  "coordinate_system": "0-based-half-open",
+  "crispr_binary_label": "Regulated",
+  "distal_distance_sensitivity_bp": [50000, 100000, 250000],
+  "genome_build": "GRCh38 primary assembly",
+  "integration_match_type": "REFERENCE_COMPARABLE",
+  "primary_distal_distance_bp": 100000,
+  "promoter_downstream_bp": 500,
+  "promoter_upstream_bp": 2000,
+  "run_mode": "external_validation"
+}

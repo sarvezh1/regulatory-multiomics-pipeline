@@ -1,0 +1,39 @@
+name: Public checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  structural-validation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Audit public release structure and hygiene
+        run: python tests/audit_release_readiness.py --allow-git
+
+      - name: Generate deterministic test fixtures
+        run: |
+          python tests/create_synthetic_fixtures.py
+          python tests/create_atac_fixtures.py
+          python tests/create_wgbs_fixtures.py
+          python tests/create_chip_fixtures.py
+          python tests/create_integration_fixtures.py
+
+      - name: Run contract tests
+        run: python -m unittest discover -s tests -p "test_*contracts.py"
+
+      - name: Run reporting and external-validation unit tests
+        run: python -m unittest tests/test_reporting.py tests/test_external_validation.py

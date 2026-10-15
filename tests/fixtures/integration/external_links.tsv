@@ -1,0 +1,2 @@
+source	version	genome_build	chromosome	start	end	gene_identifier	evidence_type	validation_type
+fixture_curated	1	GRCh38	chr1	120000	120400	ENSG00000000005.1	CRISPR	EXPERIMENTALLY_VALIDATED

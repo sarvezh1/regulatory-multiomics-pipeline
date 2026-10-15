@@ -1,0 +1,23 @@
+{
+  "annotation_name": "GENCODE_50",
+  "atac_mapq": 30,
+  "atac_peak_qvalue": 0.01,
+  "chip_mapq": 30,
+  "chip_peak_qvalue": 0.01,
+  "design_formula": "~ condition",
+  "distal_max_distance": 100000,
+  "integration_fdr": 0.05,
+  "integration_match_type": "EXACT_SAMPLE_MATCHED",
+  "integration_mode": "both",
+  "promoter_primary_window": "-2000,+500",
+  "promoter_sensitivity_windows": [
+    "-1000,+500",
+    "-2000,+1000"
+  ],
+  "reference_scope": "synthetic_validation",
+  "run_chip_diff": false,
+  "run_da": false,
+  "run_de": false,
+  "run_dm": false,
+  "wgbs_min_coverage": 5
+}

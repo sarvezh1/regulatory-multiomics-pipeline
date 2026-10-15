@@ -1,0 +1,5 @@
+modality	experiment	file_accession	file_type	assembly	source_annotation	released	original_size_bytes	md5	source_url	integration_use
+RNA	ENCSR109IQO	ENCFF611MXW	gene quantifications	GRCh38	V29	true	10954745	0b5bd054d75b1ec0df3b6a31f121d570	https://www.encodeproject.org/files/ENCFF611MXW/	ENSG rows; TPM descriptive only
+ATAC	ENCSR868FGK	ENCFF057UYP	replicated narrowPeak	GRCh38	NOT_APPLICABLE	true	6795339	ae65def42f43bcf6d66b24b1509be56f	https://www.encodeproject.org/files/ENCFF057UYP/	chr22 regions
+WGBS	ENCSR765JPC	ENCFF750NZN	bed9+ CpG bigBed	GRCh38	NOT_APPLICABLE	true	1140822721	9f055dab625d170a2392b7bffa00f227	https://www.encodeproject.org/files/ENCFF750NZN/	chr22 canonical CpGs; coverage plus rounded percent methylation; descriptive only
+H3K27ac	ENCSR000AKP	ENCFF038DDS	replicated narrowPeak	GRCh38	NOT_APPLICABLE	true	1298162	b24e283c2be89cbc2679eeb1688e4962	https://www.encodeproject.org/files/ENCFF038DDS/	chr22 regions

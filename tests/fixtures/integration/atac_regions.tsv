@@ -1,0 +1,15 @@
+region_id	chromosome	start	end	coordinate_system
+ATAC_G1	chr1	2500	3300	0-based-half-open
+ATAC_G1B	chr1	3100	3600	0-based-half-open
+ATAC_G2	chr1	9500	10200	0-based-half-open
+ATAC_G3	chr1	19500	20300	0-based-half-open
+ATAC_G4	chr1	29500	30300	0-based-half-open
+ATAC_G5	chr1	39500	40300	0-based-half-open
+ATAC_G6	chr1	49500	50300	0-based-half-open
+ATAC_G7	chr1	59500	60300	0-based-half-open
+ATAC_G8A	chr1	69500	70300	0-based-half-open
+ATAC_G8B	chr1	74500	75300	0-based-half-open
+ATAC_TWO_GENES	chr1	89900	90100	0-based-half-open
+ATAC_DISTAL	chr1	120000	120400	0-based-half-open
+ATAC_TIE	chr1	205000	205001	0-based-half-open
+ATAC_TOO_FAR	chr1	500000	500300	0-based-half-open

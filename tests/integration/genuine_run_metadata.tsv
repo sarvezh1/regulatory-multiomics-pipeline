@@ -1,0 +1,23 @@
+field	value
+study	GSE152146 / PRJNA638409
+sample	GSM4715082 / SAMN15760175
+experiment	SRX8910158
+run	SRR12413947
+condition	untreated
+biological_replicate	1
+cell_line	HEK293 reporter
+instrument_platform	BGISEQ
+library_layout	paired
+bounded_fixture_layout	single usable biological read per spot; zero-length technical mate rejected by SRA Tools
+library_source	TRANSCRIPTOMIC
+library_strategy	RNA-Seq
+full_run_read_count	65070148
+full_run_base_count	6507014800
+full_ENA_fastq_md5	967667e2b52632df4c36eea7f775485e
+full_ENA_fastq_bytes	5694649630
+bounded_spots	100000
+bounded_extraction_source	https://sra-pub-run-odp.s3.amazonaws.com/sra/SRR12413947/SRR12413947
+source_object_bytes	4165150413
+source_object_etag	c53d64d3079a9e3d6c24dc2eb700a107-497
+validation_role	execution only; not a biological or mapping-rate benchmark
+metadata_source	https://www.ebi.ac.uk/ena/browser/view/SRR12413947

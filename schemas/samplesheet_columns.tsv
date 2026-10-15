@@ -1,0 +1,34 @@
+column	required	allowed_or_type	rule
+sample_id	yes	string	Biological sample identifier; repeated only for distinct technical libraries of the same biological material.
+library_id	yes	string	Unique library/row identifier; separates technical libraries without increasing biological n.
+subject_id	no	string	Required for paired/repeated-subject designs when applicable.
+donor_id	no	string	Donor identifier; may equal subject_id but is never inferred.
+biosample_id	no	string	Repository or laboratory biosample identifier.
+condition	yes	string	Analysis-ready condition label; must map to a contrast level.
+assay	yes	enum:RNA,ATAC,WGBS,H3K27ac_ChIP,ChIP_input	One modality per row; controls are explicit records rather than inferred files.
+biological_replicate	yes	positive_integer	Replicate of independently sampled biological material.
+technical_replicate	no	positive_integer	Defaults to 1 only for file grouping; never increases biological n.
+batch	no	string	Required when a known batch is to enter the design.
+sex	no	enum:female,male,intersex,unknown,not_reported	Record only when available and scientifically relevant.
+treatment	no	string	Use none for explicitly untreated; NA for unreported.
+timepoint	no	string	Value plus unit, normalized during validation.
+genotype	no	string	Use a controlled study-specific label.
+library_layout	yes	enum:single,paired,not_applicable	Raw RNA may be single or paired; raw ATAC is paired only; processed-only rows use not_applicable.
+strandedness	conditional	enum:unstranded,forward,reverse	Required for RNA; never inferred silently.
+bisulfite_directionality	conditional	enum:directional,non_directional	Required for raw conventional WGBS; never inferred from filenames or read orientation.
+bisulfite_protocol	conditional	enum:conventional_wgbs	Required for WGBS rows; RRBS, EM-seq, oxBS-seq, PBAT, NOMe-seq, targeted, and other protocols are unsupported in v0.1.
+conversion_control_contig	no	string	Reference contig containing a genuine unmethylated conversion control; blank means conversion efficiency is unavailable.
+read1	conditional	path_or_uri	Required for raw input.
+read2	conditional	path_or_uri	Required only for paired raw input; forbidden for single.
+processed_input	conditional	path_or_uri	Required for processed-only entry.
+processed_input_type	conditional	controlled_string	RNA accepts a validated gene count matrix; quantitative ATAC accepts region_count_matrix_tsv; WGBS accepts cpg_count_tsv or descriptive-only cpg_percentage_tsv; H3K27ac accepts h3k27ac_region_count_matrix_tsv. Scores, peak significance, signal, or percentages are never converted to counts.
+source_genome_build	conditional	string_or_UNKNOWN_or_UNRESOLVED	Required for processed input; preserve the source label and do not infer it from the production reference.
+source_annotation	conditional	string_or_UNKNOWN_or_UNRESOLVED	Required for processed input; original annotation release or explicit missing-provenance state.
+source_processing_pipeline	conditional	string_or_UNKNOWN_or_UNRESOLVED	Required for processed input; source pipeline name/version when available.
+source_file_accession	conditional	string_or_UNKNOWN_or_UNRESOLVED	Required for processed input; repository or source accession.
+source_file_checksum	conditional	algorithm:value_or_UNKNOWN_or_UNRESOLVED	Required for processed input; checksum and algorithm when available.
+coordinate_normalization_status	conditional	enum:not_required,verified_primary_assembly,normalized_to_primary,UNKNOWN,UNRESOLVED	Required for processed genomic input; records compatibility or an explicit normalization outcome.
+gene_id_mapping_status	conditional	enum:not_applicable,not_required,mapped_to_gencode50,partially_mapped,UNKNOWN,UNRESOLVED	Required for processed RNA or gene-level input; original identifiers must remain recoverable.
+control_sample_id	conditional	sample_id	Required for raw H3K27ac ChIP; must reference compatible input control.
+histone_target	conditional	enum:H3K27ac,CONTROL	H3K27ac is required for treatment ChIP; CONTROL is required for input-control records.
+genome_build	yes	GRCh38_primary	Requested production coordinate space; distinct from source_genome_build and from the GENCODE 50 annotation release.

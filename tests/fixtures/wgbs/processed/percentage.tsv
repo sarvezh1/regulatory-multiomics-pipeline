@@ -1,0 +1,2 @@
+chromosome	start	end	coordinate_system	methylation_fraction
+chr22	100	102	0-based-half-open	0.5

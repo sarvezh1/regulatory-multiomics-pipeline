@@ -1,0 +1,16 @@
+##description: synthetic GENCODE v50-compatible integration fixture
+chr1	fixture	transcript	3001	5000	.	+	.	gene_id "ENSG00000000001.7"; transcript_id "TX1"; gene_name "GENE1";
+chr1	fixture	transcript	8001	10001	.	-	.	gene_id "ENSG00000000002.2"; transcript_id "TX2"; gene_name "GENE2";
+chr1	fixture	transcript	20001	22000	.	+	.	gene_id "ENSG00000000003.1"; transcript_id "TX3"; gene_name "GENE3";
+chr1	fixture	transcript	30001	32000	.	+	.	gene_id "ENSG00000000004.1"; transcript_id "TX4"; gene_name "GENE4";
+chr1	fixture	transcript	40001	42000	.	+	.	gene_id "ENSG00000000005.1"; transcript_id "TX5"; gene_name "GENE5";
+chr1	fixture	transcript	50001	52000	.	+	.	gene_id "ENSG00000000006.1"; transcript_id "TX6"; gene_name "GENE6";
+chr1	fixture	transcript	60001	62000	.	+	.	gene_id "ENSG00000000007.1"; transcript_id "TX7"; gene_name "GENE7";
+chr1	fixture	transcript	70001	72000	.	+	.	gene_id "ENSG00000000008.3"; transcript_id "TX8A"; gene_name "GENE8";
+chr1	fixture	transcript	75001	77000	.	+	.	gene_id "ENSG00000000008.3"; transcript_id "TX8B"; gene_name "GENE8";
+chr1	fixture	transcript	2	1000	.	+	.	gene_id "ENSG00000000009.1"; transcript_id "TX9"; gene_name "BOUNDARY";
+chr1	fixture	transcript	200001	202000	.	+	.	gene_id "ENSG00000000010.1"; transcript_id "TX10"; gene_name "TIE_A";
+chr1	fixture	transcript	208001	210001	.	-	.	gene_id "ENSG00000000011.1"; transcript_id "TX11"; gene_name "TIE_B";
+chr1	fixture	transcript	90001	92000	.	+	.	gene_id "ENSG00000000012.1"; transcript_id "TX12"; gene_name "OVERLAP_A";
+chr1	fixture	transcript	88051	90051	.	-	.	gene_id "ENSG00000000013.1"; transcript_id "TX13"; gene_name "OVERLAP_B";
+chr1	fixture	transcript	3001	4800	.	+	.	gene_id "ENSG00000000001.7"; transcript_id "TX1B"; gene_name "GENE1";

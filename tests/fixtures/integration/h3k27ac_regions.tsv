@@ -1,0 +1,9 @@
+region_id	chromosome	start	end	coordinate_system
+H3_G1	chr1	2600	3400	0-based-half-open
+H3_G2	chr1	9600	10300	0-based-half-open
+H3_G4	chr1	29600	30400	0-based-half-open
+H3_G5	chr1	39600	40400	0-based-half-open
+H3_G7	chr1	59600	60400	0-based-half-open
+H3_G8A	chr1	69600	70400	0-based-half-open
+H3_DISTAL	chr1	120100	120500	0-based-half-open
+H3_TIE	chr1	204999	205002	0-based-half-open

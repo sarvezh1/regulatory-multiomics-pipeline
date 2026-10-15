@@ -1,0 +1,8 @@
+title: RNA-seq quality control
+no_megaqc_upload: true
+report_comment: Deterministic assay-level quality-control report.
+show_analysis_paths: false
+show_analysis_time: false
+export_plots: false
+disable_version_detection: false
+skip_generalstats: false

@@ -1,0 +1,6 @@
+region_id	chromosome	start	end	control_1	control_1_input	control_2	control_2_input	control_3	control_3_input	treatment_1	treatment_1_input	treatment_2	treatment_2_input	treatment_3	treatment_3_input
+H3K27AC_54ac505e8b6fc0d1	chr1	1000	1200	101	20	102	20	103	20	101	20	102	20	103	20
+H3K27AC_782a68cc903ba643	chr1	3000	3200	1001	21	1002	21	1003	21	8001	21	8002	21	8003	21
+H3K27AC_3e5210865899597f	chr1	5000	5200	601	22	602	22	603	22	51	22	52	22	53	22
+H3K27AC_03658e5a564e0143	chr1	7000	7200	3	23	4	23	5	23	3	23	4	23	5	23
+H3K27AC_15a703b26c52ff5a	chr1	9000	9200	0	24	0	24	0	24	0	24	0	24	0	24

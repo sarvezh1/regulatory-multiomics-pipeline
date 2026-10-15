@@ -1,0 +1,11 @@
+chromosome	start	end	coordinate_system	methylated_count	unmethylated_count	coverage	methylation_fraction
+chr22	100	102	0-based-half-open	0	0	0	NA
+chr22	110	112	0-based-half-open	0	0	0	NA
+chr22	120	122	0-based-half-open	0	0	0	NA
+chr22	130	132	0-based-half-open	0	0	0	NA
+chr22	140	142	0-based-half-open	0	0	0	NA
+chr22	150	152	0-based-half-open	0	0	0	NA
+chr22	160	162	0-based-half-open	0	0	0	NA
+chr22	170	172	0-based-half-open	0	0	0	NA
+chr22	180	182	0-based-half-open	0	0	0	NA
+chr22	190	192	0-based-half-open	0	0	0	NA

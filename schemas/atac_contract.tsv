@@ -1,0 +1,17 @@
+table	field	type	required	rule
+regions	region_id	string	yes	ATAC_ plus truncated SHA-256 of chromosome:start-end; never row number alone.
+regions	chromosome	string	yes	Allowed primary nuclear contig for production integration.
+regions	start	integer	yes	Zero-based inclusive start.
+regions	end	integer	yes	Zero-based exclusive end; greater than start.
+regions	coordinate_system	0-based-half-open	yes	Explicit interval convention.
+region_provenance	source_peak_id	string	yes	Recoverable contributing sample peak identifier.
+samples	sample_id	string	yes	Biological sample and count-matrix column identity.
+samples	library_id	string	yes	Technical library provenance; never an independent biological replicate by itself.
+samples	biological_replicate	positive_integer	yes	Independent biological replicate label.
+samples	condition	string	yes	Design-ready condition label.
+counts	<sample_id>	nonnegative_integer	yes	One paired fragment counted once for each overlapping consensus region.
+differential	log2FoldChange	number_or_NA	conditional	Positive means greater accessibility in the named numerator condition.
+differential	pvalue	number_or_NA	conditional	Preserve unavailable values as NA.
+differential	padj	number_or_NA	conditional	Preserve unavailable values as NA.
+status	component	controlled_string	yes	Component-scoped status identity.
+status	status	controlled_vocabulary	yes	Project status vocabulary; tool failures remain FAILED workflow failures.

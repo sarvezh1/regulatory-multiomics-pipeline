@@ -1,0 +1,14 @@
+column	type	required	description
+gene_id_original	string	yes	Original versioned source gene identifier; never overwritten.
+gene_id_base	string	yes	Derived identifier with a terminal version suffix removed when applicable.
+gene_name	string	no	Source gene name when supplied; never used as the primary join key.
+raw_count	nonnegative_integer	yes	Per-library raw gene count before technical-library combination.
+sample_id	string	yes	Biological sample identity used as the independent unit for differential analysis.
+library_id	string	yes	Unique input-library identity.
+source_genome_build	string_or_state	yes	Source build label or explicit UNKNOWN/UNRESOLVED state.
+source_annotation	string_or_state	yes	Source annotation label or explicit UNKNOWN/UNRESOLVED state.
+source_processing_pipeline	string_or_state	yes	Source processing identity or explicit UNKNOWN/UNRESOLVED state.
+source_file_accession	string_or_state	yes	Source accession or explicit UNKNOWN/UNRESOLVED/NOT_APPLICABLE state.
+source_file_checksum	checksum_or_state	yes	Source checksum or explicit UNKNOWN/UNRESOLVED/NOT_APPLICABLE state.
+coordinate_normalization_status	controlled_string	yes	Recorded compatibility/normalization state.
+gene_id_mapping_status	controlled_string	yes	Recorded identifier-mapping state; original ID remains recoverable.

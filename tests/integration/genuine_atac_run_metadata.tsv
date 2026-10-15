@@ -1,0 +1,20 @@
+field	SRR13036031	SRR13036032
+study	GSE152146 / PRJNA638409	GSE152146 / PRJNA638409
+sample	GSM4904180 / SAMN16770460	GSM4904181 / SAMN16770459
+experiment	SRX9486247	SRX9486248
+condition	untreated	untreated
+biological_replicate	1	2
+instrument	Illumina NovaSeq 6000	Illumina NovaSeq 6000
+library_layout	paired	paired
+library_strategy	ATAC-seq	ATAC-seq
+full_run_read_count	42072614	48571365
+full_run_base_count	12621784200	14571409500
+full_ENA_fastq_bytes	2796780416;2828972657	3036907934;3197226462
+full_ENA_fastq_md5	a5be219c17ad5e7cc6710e9cd37e64f0;07f7753dfc886eaa1fb7f244e0b76783	7372c62bc6d5227a14fb57739be370db;b7a2958cb5ca10e630fc6c661c6483fb
+bounded_spots	250000	250000
+run_metadata_url	https://www.ncbi.nlm.nih.gov/sra/SRR13036031	https://www.ncbi.nlm.nih.gov/sra/SRR13036032
+geo_sample_url	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM4904180	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM4904181
+bounded_extraction_source	https://sra-pub-run-odp.s3.amazonaws.com/sra/SRR13036031/SRR13036031	https://sra-pub-run-odp.s3.amazonaws.com/sra/SRR13036032/SRR13036032
+source_object_bytes	4272231669	4907450418
+source_object_etag	46362b18274727a8183cbb9512cf842f-510	23fec4f8eb45bdbea648a9271cbce612-586
+validation_role	execution only; not a biological or genome-wide QC benchmark	execution only; not a biological or genome-wide QC benchmark

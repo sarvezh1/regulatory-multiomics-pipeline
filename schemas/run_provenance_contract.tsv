@@ -1,0 +1,13 @@
+artifact	schema_name	schema_version	primary_key	purpose
+run_manifest.json	run_manifest	1.0.0	run_id	Run identity and manifest checksums
+input_manifest.tsv	input_manifest	1.0.0	modality;sample_id;library_id;role;logical_name	Normalized external input identities
+reference_manifest.tsv	reference_manifest	1.0.0	reference_role;logical_name	Reference identities and validation scope
+tool_manifest.tsv	tool_manifest	1.0.0	tool	Executed tool versions
+container_manifest.tsv	container_manifest	1.0.0	component	Pinned execution images
+parameter_manifest.json	parameter_manifest	1.0.0	not_applicable	Scientifically relevant effective parameters
+source_manifest.tsv	source_manifest	1.0.0	relative_path	Execution-source files and checksums
+output_manifest.tsv	output_manifest	1.0.0	component;relative_path	Public scientific output inventory
+status_manifest.tsv	status_manifest	1.0.0	component;status	Component-scoped status summary
+warning_manifest.tsv	warning_manifest	1.0.0	warning_code;component	Warnings and limitations
+sanitized_execution.tsv	sanitized_execution	1.0.0	component;process	Public-safe execution summary
+plot_manifest.tsv	plot_manifest	1.0.0	plot_name;source_table	Plot-to-source traceability

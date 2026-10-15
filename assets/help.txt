@@ -1,0 +1,17 @@
+regulatory-multiomics-pipeline
+
+Supported assay selectors:
+  RNA        short-read RNA-seq, raw or processed counts
+  ATAC       paired-end bulk ATAC-seq, raw or processed region counts
+  WGBS       conventional paired-end WGBS, raw or processed CpG counts
+  H3K27ac    H3K27ac ChIP-seq with explicit matched input control
+  INTEGRATION standardized-contract regulatory evidence integration
+
+Essential parameters:
+  --assay, --input, --fasta, --gtf, --outdir
+  ATAC/H3K27ac additionally require --blacklist for raw and validated processed routes.
+  INTEGRATION requires --integration_manifest and an explicit --integration_match_type.
+
+Raw and processed records are mutually exclusive per library. Differential analyses are opt-in,
+require an explicit contrast, and retain component-scoped NOT_RUN states when inference is invalid
+or disabled. See README.md and docs/ for complete examples and output contracts.

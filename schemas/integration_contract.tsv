@@ -1,0 +1,15 @@
+table	field	type	required	rule
+tss	tss_id	string	yes	Deterministic gene/chromosome/coordinate/strand identity.
+tss	gene_id_original	string	yes	Original versioned GENCODE identifier retained.
+tss	gene_id_base	string	yes	Terminal numeric version removed deterministically.
+tss	transcript_ids	semicolon_delimited_string	yes	All transcripts sharing the exact gene/strand/TSS coordinate.
+promoters	promoter_id	string	yes	Deterministic TSS and window-derived identity.
+promoters	promoter_start	integer	yes	Zero-based inclusive, chromosome-clipped.
+promoters	promoter_end	integer	yes	Zero-based exclusive.
+relationships	source_region_id	string	yes	Recoverable assay-region identity.
+relationships	overlap_bp	positive_integer	yes	Strict positive intersection; book-ended intervals excluded.
+promoter_evidence	regulatory_pattern	string	yes	Literal assay evidence states without causal interpretation.
+promoter_evidence	integration_match_type	string	yes	Explicit sample/condition/reference matching class.
+gene_summary	promoter_interpretation	string	yes	PROMOTER_HETEROGENEITY when promoter patterns disagree.
+distal_links	link_method	string	yes	NEAREST_TSS_CANDIDATE or explicitly sourced external evidence class.
+statuses	component	string	yes	Component-scoped integration status.

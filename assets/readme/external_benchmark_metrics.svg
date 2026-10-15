@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
+  <title id="title">External CRISPR benchmark metrics</title>
+  <desc id="desc">Grouped comparison on a shared zero to 0.70 scale of precision, recall, F1, and MCC for the frozen 100 kilobase activity-constrained method, distance-only nearest-TSS baseline, and descriptive ATAC/H3K27ac-colocated subset.</desc>
+  <rect width="1000" height="600" fill="#ffffff"/>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; fill: #24323d; }
+    .title { font-size: 24px; font-weight: 650; }
+    .subtitle { font-size: 14px; fill: #52626f; }
+    .metric { font-size: 15px; font-weight: 650; }
+    .value { font-size: 11px; font-weight: 650; }
+    .axis { font-size: 12px; fill: #61717d; }
+    .legend { font-size: 13px; }
+    .note { font-size: 13px; fill: #52626f; }
+  </style>
+
+  <text x="42" y="42" class="title">External CRISPR benchmark</text>
+  <text x="42" y="68" class="subtitle">Frozen validated results · distal tested-pair denominator · every metric uses the same 0–0.70 scale</text>
+
+  <rect x="92" y="95" width="16" height="16" fill="#315b7d"/>
+  <text x="116" y="108" class="legend">Frozen 100 kb activity-constrained</text>
+  <rect x="374" y="95" width="16" height="16" fill="#b8672d"/>
+  <text x="398" y="108" class="legend">Distance-only nearest-TSS baseline</text>
+  <rect x="688" y="95" width="16" height="16" fill="#3d7f78"/>
+  <text x="712" y="108" class="legend">ATAC/H3K27ac-colocated subset</text>
+
+  <g stroke="#d9e0e5" stroke-width="1">
+    <line x1="92" y1="430" x2="958" y2="430"/>
+    <line x1="92" y1="390.7" x2="958" y2="390.7"/>
+    <line x1="92" y1="351.4" x2="958" y2="351.4"/>
+    <line x1="92" y1="312.1" x2="958" y2="312.1"/>
+    <line x1="92" y1="272.9" x2="958" y2="272.9"/>
+    <line x1="92" y1="233.6" x2="958" y2="233.6"/>
+    <line x1="92" y1="194.3" x2="958" y2="194.3"/>
+    <line x1="92" y1="155" x2="958" y2="155"/>
+  </g>
+  <g text-anchor="end" class="axis">
+    <text x="82" y="434">0.0</text>
+    <text x="82" y="394.7">0.1</text>
+    <text x="82" y="355.4">0.2</text>
+    <text x="82" y="316.1">0.3</text>
+    <text x="82" y="276.9">0.4</text>
+    <text x="82" y="237.6">0.5</text>
+    <text x="82" y="198.3">0.6</text>
+    <text x="82" y="159">0.7</text>
+  </g>
+
+  <!-- Precision -->
+  <rect x="130" y="201.4" width="34" height="228.6" fill="#315b7d"/>
+  <rect x="183" y="200.6" width="34" height="229.4" fill="#b8672d"/>
+  <rect x="236" y="169.4" width="34" height="260.6" fill="#3d7f78"/>
+  <text x="147" y="194" text-anchor="middle" class="value">0.5820</text>
+  <text x="200" y="193" text-anchor="middle" class="value">0.5839</text>
+  <text x="253" y="162" text-anchor="middle" class="value">0.6634</text>
+  <text x="200" y="461" text-anchor="middle" class="metric">Precision</text>
+
+  <!-- Recall -->
+  <rect x="345" y="364.7" width="34" height="65.3" fill="#315b7d"/>
+  <rect x="398" y="350.0" width="34" height="80.0" fill="#b8672d"/>
+  <rect x="451" y="368.4" width="34" height="61.6" fill="#3d7f78"/>
+  <text x="362" y="357" text-anchor="middle" class="value">0.1663</text>
+  <text x="415" y="342" text-anchor="middle" class="value">0.2037</text>
+  <text x="468" y="361" text-anchor="middle" class="value">0.1569</text>
+  <text x="415" y="461" text-anchor="middle" class="metric">Recall</text>
+
+  <!-- F1 -->
+  <rect x="560" y="328.4" width="34" height="101.6" fill="#315b7d"/>
+  <rect x="613" y="311.3" width="34" height="118.7" fill="#b8672d"/>
+  <rect x="666" y="330.3" width="34" height="99.7" fill="#3d7f78"/>
+  <text x="577" y="321" text-anchor="middle" class="value">0.2587</text>
+  <text x="630" y="304" text-anchor="middle" class="value">0.3021</text>
+  <text x="683" y="323" text-anchor="middle" class="value">0.2538</text>
+  <text x="630" y="461" text-anchor="middle" class="metric">F1</text>
+
+  <!-- MCC -->
+  <rect x="775" y="313.4" width="34" height="116.6" fill="#315b7d"/>
+  <rect x="828" y="300.5" width="34" height="129.5" fill="#b8672d"/>
+  <rect x="881" y="308.1" width="34" height="121.9" fill="#3d7f78"/>
+  <text x="792" y="306" text-anchor="middle" class="value">0.2968</text>
+  <text x="845" y="293" text-anchor="middle" class="value">0.3297</text>
+  <text x="898" y="301" text-anchor="middle" class="value">0.3104</text>
+  <text x="845" y="461" text-anchor="middle" class="metric">MCC</text>
+
+  <line x1="42" y1="498" x2="958" y2="498" stroke="#d9e0e5"/>
+  <text x="42" y="528" class="note">The distance-only baseline exceeded the frozen method on F1 and MCC.</text>
+  <text x="42" y="552" class="note">The colocated subset is descriptive and does not define a new production filter.</text>
+</svg>

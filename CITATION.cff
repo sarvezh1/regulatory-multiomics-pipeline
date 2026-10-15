@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata in this file."
+title: regulatory-multiomics-pipeline
+type: software
+version: 0.1.0
+authors:
+  - family-names: Galgale
+    given-names: Sarvesh
+license: MIT
+abstract: >-
+  A reproducible Nextflow DSL2 workflow for human bulk RNA-seq, ATAC-seq,
+  conventional WGBS, H3K27ac ChIP-seq, regulatory-evidence integration,
+  offline reporting, provenance, and external validation on GRCh38 with
+  GENCODE release 50.
+repository-code: "https://github.com/sarvezh1/regulatory-multiomics-pipeline"

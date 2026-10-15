@@ -1,0 +1,18 @@
+table	field	type	required	rule
+regions	region_id	string	yes	Deterministic H3K27AC_SHA256 coordinate-derived identifier.
+regions	chromosome	string	yes	Reference-compatible nuclear chromosome.
+regions	start	integer	yes	Zero-based inclusive start.
+regions	end	integer	yes	Zero-based exclusive end; end must exceed start.
+regions	coordinate_system	string	yes	Always 0-based_half-open in the canonical contract.
+region_peak_provenance	region_id	string	yes	Foreign key to regions.
+region_peak_provenance	source_peak	string	yes	Contributing sample peak identity and coordinates.
+samples	sample_id	string	yes	Biological sample identity; technical libraries do not increase n.
+samples	control_sample_id	string	yes	Explicit compatible ChIP input record.
+counts	region_id	string	yes	Foreign key to regions.
+counts	<sample_id>	integer	yes	Raw single-end reads or paired-end fragments counted once.
+differential	log2FoldChange	number_or_NA	conditional	Positive means greater H3K27ac enrichment in the named numerator.
+differential	pvalue	number_or_NA	conditional	Complete tested-region output preserves missing values.
+differential	padj	number_or_NA	conditional	Multiple-testing adjusted value; never coerced to zero.
+qc	FRiP	number_or_NA	yes	Reads/fragments in sample peaks divided by usable nonduplicate nuclear evidence.
+provenance	control_mapping	object	yes	Treatment-to-input identity is retained explicitly.
+statuses	component_status	enum	yes	Project status vocabulary applied independently by component.

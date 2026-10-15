@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500" role="img" aria-labelledby="title desc">
+  <title id="title">False-negative failure modes in the frozen external benchmark</title>
+  <desc id="desc">Of 356 false negatives, 259 involved a regulated gene that was not nearest, 78 were beyond 100 kilobases, 13 were residual link non-recoveries, and 6 had no represented activity region.</desc>
+  <rect width="1000" height="500" fill="#ffffff"/>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; fill: #24323d; }
+    .title { font-size: 24px; font-weight: 650; }
+    .subtitle { font-size: 14px; fill: #52626f; }
+    .label { font-size: 15px; }
+    .value { font-size: 15px; font-weight: 650; }
+    .axis { font-size: 12px; fill: #61717d; }
+  </style>
+  <text x="42" y="43" class="title">Why regulated pairs were missed</text>
+  <text x="42" y="69" class="subtitle">Failure-mode analysis for the frozen 100 kb external benchmark · 356 false negatives</text>
+
+  <g stroke="#d9e0e5" stroke-width="1">
+    <line x1="310" y1="108" x2="310" y2="404"/>
+    <line x1="510" y1="108" x2="510" y2="404"/>
+    <line x1="710" y1="108" x2="710" y2="404"/>
+    <line x1="910" y1="108" x2="910" y2="404"/>
+  </g>
+  <text x="42" y="155" class="label">Regulated gene not nearest</text>
+  <rect x="310" y="130" width="518" height="38" fill="#315b7d"/>
+  <text x="840" y="155" class="value">259</text>
+
+  <text x="42" y="231" class="label">Distance &gt;100 kb</text>
+  <rect x="310" y="206" width="156" height="38" fill="#5f829d"/>
+  <text x="478" y="231" class="value">78</text>
+
+  <text x="42" y="307" class="label">Residual link non-recovery</text>
+  <rect x="310" y="282" width="26" height="38" fill="#8aa3b5"/>
+  <text x="348" y="307" class="value">13</text>
+
+  <text x="42" y="383" class="label">No represented activity region</text>
+  <rect x="310" y="358" width="12" height="38" fill="#b1c2ce"/>
+  <text x="334" y="383" class="value">6</text>
+
+  <text x="310" y="428" text-anchor="middle" class="axis">0</text>
+  <text x="510" y="428" text-anchor="middle" class="axis">100</text>
+  <text x="710" y="428" text-anchor="middle" class="axis">200</text>
+  <text x="910" y="428" text-anchor="middle" class="axis">300 pairs</text>
+  <text x="42" y="468" class="subtitle">The dominant failure mode was gene assignment, not absence of a represented activity region.</text>
+</svg>

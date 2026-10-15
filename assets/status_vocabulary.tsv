@@ -1,0 +1,9 @@
+status	meaning
+COMPLETE	Analysis completed successfully and produced a result.
+COMPLETE_EMPTY_RESULT	A valid analysis completed with no features meeting the declared result filter.
+NOT_RUN_DISABLED	Analysis was explicitly disabled.
+NOT_RUN_NO_CONTRAST	No explicit contrast was supplied.
+NOT_RUN_INSUFFICIENT_REPLICATION	A contrasted group has fewer than two independent biological samples.
+NOT_RUN_INVALID_DESIGN	The requested design is non-estimable or otherwise invalid.
+NOT_AVAILABLE_INPUT	Required input is unavailable.
+FAILED	A tool or process failed; this state is not a scientific non-run state.

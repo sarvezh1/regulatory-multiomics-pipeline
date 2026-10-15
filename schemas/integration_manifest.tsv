@@ -1,0 +1,12 @@
+column	required	allowed_or_type	rule
+modality	yes	enum:RNA,ATAC,WGBS,H3K27ac,EXTERNAL	Source modality; no fuzzy matching.
+data_type	yes	enum:rna_baseline,rna_differential,atac_regions,atac_differential,wgbs_cpg,wgbs_cpg_descriptive,wgbs_dmr,h3k27ac_regions,h3k27ac_differential,enhancer_gene_map	Exact input contract table type; descriptive WGBS never invents read counts.
+path	yes	file	Existing UTF-8 TSV input.
+source_genome_build	yes	string	Coordinate inputs require explicit compatible GRCh38 primary-assembly provenance.
+coordinate_normalization_status	yes	string	Coordinate inputs must be normalized/verified; unresolved coordinates are rejected.
+source_annotation	yes	string_or_state	Original annotation or explicit UNKNOWN/NOT_APPLICABLE.
+status	yes	project_status	Upstream component status; only COMPLETE differential results are interpreted inferentially.
+contrast_variable	yes	string_or_NA	Explicit differential variable; NA for descriptive inputs.
+numerator	yes	string_or_NA	Explicit numerator; NA for descriptive inputs.
+denominator	yes	string_or_NA	Explicit denominator; NA for descriptive inputs.
+integration_match_type	yes	enum:EXACT_SAMPLE_MATCHED,CONDITION_MATCHED,REFERENCE_COMPARABLE,UNMATCHED	Biological correspondence; never inferred from condition labels alone.

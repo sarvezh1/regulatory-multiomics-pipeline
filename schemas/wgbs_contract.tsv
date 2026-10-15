@@ -1,0 +1,32 @@
+table	field	type	required	rule
+cpg	cpg_id	string	yes	Deterministic SHA-256-derived identifier from canonical coordinates.
+cpg	chromosome	string	yes	Reference sequence name in the declared build.
+cpg	start	nonnegative_integer	yes	Zero-based start of the reference CpG dinucleotide.
+cpg	end	positive_integer	yes	Half-open end; end equals start plus two.
+cpg	coordinate_system	0-based-half-open	yes	Canonical internal interval convention.
+cpg	sample_id	string	yes	Biological sample identifier.
+cpg	library_id	string_or_NA	conditional	Technical-library identifier before biological-sample aggregation.
+cpg	methylated_count	nonnegative_integer_or_NA	yes	Observed methylated calls; NA for percentage-only descriptive inputs.
+cpg	unmethylated_count	nonnegative_integer_or_NA	yes	Observed unmethylated calls; NA for percentage-only descriptive inputs.
+cpg	coverage	nonnegative_integer_or_NA	yes	Methylated plus unmethylated calls; NA when counts are unavailable.
+cpg	methylation_fraction	fraction_or_NA	yes	Methylated divided by coverage; NA at zero or missing coverage.
+cpg	measurement_state	enum	yes	OBSERVED, ZERO_COVERAGE, MISSING, or DESCRIPTIVE_PERCENTAGE_ONLY.
+cpg	source_strands	string	yes	Top/bottom source evidence contributing to the canonical CpG.
+cpg	source_coordinate_system	string	yes	Recoverable original coordinate convention.
+excluded_cpg	source_position_1based	positive_integer	yes	Bismark source position excluded from the canonical reference-CpG contract.
+excluded_cpg	methylated_count	nonnegative_integer	yes	Excluded methylated calls retained for audit.
+excluded_cpg	unmethylated_count	nonnegative_integer	yes	Excluded unmethylated calls retained for audit.
+excluded_cpg	reason	string	yes	Deterministic reference-validation rejection reason.
+dmr	dmr_id	string	yes	Deterministic coordinate, contrast, and method-derived identifier.
+dmr	chromosome	string	yes	Reference sequence name.
+dmr	start	nonnegative_integer	yes	Zero-based region start.
+dmr	end	positive_integer	yes	Half-open region end.
+dmr	n_cpg	positive_integer	yes	CpGs contributing to the region summary.
+dmr	mean_methylation_numerator	fraction_or_NA	yes	Region mean in the explicitly named numerator.
+dmr	mean_methylation_denominator	fraction_or_NA	yes	Region mean in the explicitly named denominator.
+dmr	delta_methylation	fraction	yes	Numerator minus denominator methylation fraction.
+dmr	delta_methylation_pp	percentage_points	yes	Fraction difference multiplied by 100.
+dmr	pvalue	probability_or_NA	yes	Method value when exposed.
+dmr	qvalue	probability_or_NA	yes	Adjusted value when exposed.
+dmr	contrast	string	yes	Variable, numerator, and denominator.
+dmr	method	string	yes	Pinned inference method.

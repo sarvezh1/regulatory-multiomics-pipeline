@@ -1,0 +1,36 @@
+* text=auto
+
+*.nf      text eol=lf
+*.config  text eol=lf
+*.sh      text eol=lf
+*.py      text eol=lf
+*.R       text eol=lf
+*.r       text eol=lf
+*.yml     text eol=lf
+*.yaml    text eol=lf
+*.json    text eol=lf
+*.tsv     text eol=lf
+*.csv     text eol=lf
+*.md      text eol=lf
+*.cff     text eol=lf
+*.txt     text eol=lf
+*.bed     text eol=lf
+*.gtf     text eol=lf
+*.fa      text eol=lf
+*.fasta   text eol=lf
+
+*.gz      binary
+*.zip     binary
+*.bam     binary
+*.bai     binary
+*.cram    binary
+*.crai    binary
+*.bw      binary
+*.bigWig  binary
+*.bb      binary
+*.bigBed  binary
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.gif     binary
+*.pdf     binary

@@ -1,0 +1,14 @@
+path_classification	policy	examples
+PUBLIC_SOURCE	include	main.nf;nextflow.config;conf;workflows;modules;bin
+PUBLIC_SMALL_TEST_FIXTURE	include when deterministic and compact	tests/fixtures generated synthetic tables and reads
+GENERATED_OUTPUT	do not commit	results;tests/output;unified run reports
+LOCAL_CACHE	do not commit	work;.nextflow;tests/work;container caches
+GENUINE_DATA	do not commit	FASTQ;BAM;BAI;bigWig;downloaded processed archives
+EXTERNAL_VALIDATION_RESOURCE	do not commit	ENCODE cCRE BED;EPCrisprBenchmark source table;full GENCODE reference files
+EXTERNAL_VALIDATION_DERIVED_FULL_GENOME	do not commit	full-genome TSS/promoters;validation region sets;pair-level benchmark outputs
+EXTERNAL_VALIDATION_PUBLIC_SUMMARY	include when compact and license-compatible	source registry;prediction freeze checksums;documentation;fetch and analysis scripts
+DOWNLOADED_REFERENCE	do not commit	FASTA;GTF;Bowtie2 indexes;Bismark indexes outside intentional tiny fixtures
+LOCAL_OPERATIONAL_METADATA	do not commit	.nextflow.log;execution traces;timeline;execution report;DAG
+SECRET_PRIVATE	do not commit	credentials;tokens;environment files;signed URLs
+PUBLIC_DOCUMENTATION	include	README.md;docs;schemas;metadata audit tables
+PUBLIC_RELEASE_METADATA	include	LICENSE;CITATION.cff;.gitattributes;.github/workflows;public file inventory
